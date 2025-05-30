@@ -27,3 +27,11 @@ themeBtn.addEventListener("click", () => {
         localStorage.setItem("theme", "light");
     }
 });
+// Находим кнопку по ID
+const btn = document.getElementById("learnBtn");
+
+// Когда кликают — запускаем функцию
+btn.addEventListener("click", () => {
+    // Показываем простое сообщение
+    alert("Я изучаю HTML, CSS, JavaScript и C#!");
+});

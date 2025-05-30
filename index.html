@@ -6,43 +6,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>Web Browsers</h1>
-        <p>Google Chrome, Firefox и Internet Explorer являются самыми популярными браузерами сегодня.</p>
-
-        <article>
-            <h1>Google Chrome</h1>
-            <p>
-                Google Chrome - это бесплатный веб-браузер с открытым исходным кодом, разработанный Google,
-                выпущенный в 2008 году.
-            </p>
-        </article>
-
-        <article>
-            <h1>Internet Explorer</h1>
-            <p>Internet Explorer - бесплатный веб-браузер от Microsoft, выпущенный в 1995 году.</p>
-        </article>
-
-        <article>
-            <h1>Mozilla Firefox</h1>
-            <p>Firefox - это бесплатный веб-браузер с открытым исходным кодом от Mozilla, выпущенный в 2004 году.</p>
-        </article>
-
-        <button id="helloBtn">Нажми на меня</button>
+    <nav class="navbar">
+    <ul>
+    <li><a href="#about">Обо мне</a></li>
+   <li> <a href="#skills">Навыки</a></li>
+    <li><a href="#projects">Проекты</a></li>
+   <li><a href="#contact">Контакты</a></li> 
+    </ul>
+</nav>
+    <section id="intro">
+    <h2 class="fade-in">Добро пожаловать на мой сайт!</h2>
+    <p class="fade-in">Я учусь создавать красивые и умные веб-приложения.</p>
+    <button id="learnBtn">Что я изучаю?</button>
+</section>
+        
         <header>
-            <h1>Привет, я Kirill!</h1>
-            <p>Fullstack-разработчик: C#, ASP.NET, HTML, CSS, JS</p>
+            <h1 class="fade-in" Привет Я Kirill!</h1>
+            <p class="fade-in" C#, ASP.NET, HTML, CSS, JS</p>
         </header>
 
-        <section>
-            <h2>Обо мне</h2>
-            <p>Изучаю Fullstack-разработку с нуля. Мечтаю создавать мощные проекты.</p>
+        <section id="about">
+            <h2 class="fade-in"> Обо мне</h2>
+            <p class="fade-in"> Изучаю Fullstack-разработку с нуля. Мечтаю создавать мощные проекты.</p>
         </section>
+        <section id="skills">
+            <h2>Навыки</h2>
+            <button id="helloBtn">Нажми на меня</button>
+        <ul>
+            <li>C#</li>
+            <li>Html & CSS</li>
+            <li>GitHub & Git</li>
+        </ul>
+        </section>
+
         <button id="toggleThemeBtn">Сменить тему</button>
-        <footer>
-            <p>📧 kirilwolf@gmail.com | 🐙 <a href="https://github.com/kirillwolf" target="_blank">GitHub</a></p>
-    </main>
-    </footer>
+
+        <section id="projects">
+            <h2>Мои проекты</h2>
+            <div class="project-card">
+                <h3>Проект 1: Визитка</h3>
+                <p>Простой сайт-визитка на Html,CSS с кнопкой JS.</Html></p>
+                <a href="#" target="_blank">Открыть</a>
+                </div>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>
+                📧 <a href="mailto:kirilwolf@gmail.com" target="_blank">kirillwolf@gmail.com</a><br>
+            </p> 🐙 <a href="https://github.com/kirillwolf" target="_blank">GitHub</a></p>
+            </section>
+            
+  <footer></footer>
+
     <script src="script.js"></script>
+    
 </body>
 </html>
